@@ -1,0 +1,59 @@
+<style>
+  .form-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  .form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+
+  .form-container input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+
+<div class="form-container">
+  <form action="/login" method="POST">
+    <p>Please use the following form to login.</p>
+    <div>
+      <label
+        >Username: <input name="username" type="text" value="" autofocus
+      /></label>
+    </div>
+    <div>
+      <label
+        >Password: <input name="password" type="password" value=""
+      /></label>
+    </div>
+    <div>
+      <input type="submit" value="Login" />
+    </div>
+  </form>
+</div>
